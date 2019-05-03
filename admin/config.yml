@@ -31,6 +31,6 @@ collections:
 
       - label: "End Introduction"
         name: "end_introduction"
-        file: "_data/sections_text/end-introduction.json"
+        file: "_data/sections_text/end_introduction.json"
         fields:
-          - {label: Intro, name: intro, widget: markdown}
+          - {label: Text, name: text, widget: markdown}
