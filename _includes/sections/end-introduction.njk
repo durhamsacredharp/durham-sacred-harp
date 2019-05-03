@@ -1,4 +1,4 @@
-<p>{{ sections_text.end_introduction.text | striptags(true) | escape | nl2br }}</p>
+<p>{{ sections_text.end_introduction.text | markdownify | safe }}</p>
 {# {% for line in sections_text.end_introduction.text %}
 
     <p>{{ line }}</p>
