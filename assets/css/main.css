@@ -1,0 +1,73 @@
+body {
+    background-color: #ededed;
+}
+
+a {
+    color: #2859a3;
+    border-bottom: 2px solid #2859a3;
+}
+
+a.wordwrap {
+    word-wrap: break-word;
+}
+
+a:hover {
+    color: #2859a3;
+    text-decoration: none;
+}
+
+.main-logo {
+    max-height: 300px;
+}
+
+.fill {
+    min-height: 100vh;
+}
+
+.highlight {
+    padding: 1rem 0;
+    background-color: rgba(255, 234, 0, 0.3);
+}
+
+.notification {
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+    background-color: rgba(255, 104, 104, 0.5)
+}
+
+#upcoming-singings p,
+#notification p {
+    margin-bottom: 0
+}
+
+.contact-logo {
+    max-width: 50px;
+}
+
+.updates-subscribe-button {
+    background-color: #2859a3;
+    color: white;
+}
+
+.navbar {
+    background-color: #2859a3;
+    border-radius: 2px;
+}
+
+.navbar-toggler {
+    color: #ffffff;
+}
+
+.nav-link,
+.nav-link:hover {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.nav-link::-moz-selection {
+    background-color: none;
+}
+
+.nav-link::selection {
+    background-color: none;
+}

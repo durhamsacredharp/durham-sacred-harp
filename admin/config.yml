@@ -1,0 +1,36 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+  commit_messages:
+    create: Create {{collection}} "{{slug}}"
+    update: Update {{collection}} "{{slug}}"
+    delete: Delete {{collection}} "{{slug}}"
+    uploadMedia: Upload "{{path}}"
+    deleteMedia: Delete "{{path}}"
+
+# Uncomment below to enable drafts
+# publish_mode: editorial_workflow
+
+site_url: https://durhamsacredharp.co.uk
+logo_url: /assets/images/dsh_new_share_image.png
+
+media_folder: "assets/images" # Media files will be stored in the repo under images/uploads
+
+collections:
+    # Text for sections of the page
+  - label: "Sections Text"
+    name: "sections_text"
+    files:
+      - label: "Contact Us"
+        name: "Contact Us"
+        file: "_data/sections_text/contact.json"
+        fields:
+          - {label: sectionTitle, name: sectionTitle, widget: string}
+          - {label: emailUsText, name: emailUsText, widget: string}
+          - {label: tweetUsText, name: tweetUsText, widget: string}
+
+      - label: "End Introduction"
+        name: "end_introduction"
+        file: "_data/sections_text/end-introduction.json"
+        fields:
+          - {label: Intro, name: intro, widget: markdown}

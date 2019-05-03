@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% include "components/metadata.njk" %}
+    {% include "components/head_styles_scripts.njk" %}
+</head>
+
+<body>
+
+    <div class="container mb-5">
+
+        {% include "sections/top-logo.njk" %}
+
+        {% include "components/nav.njk" %}
+
+        <main id="main">
+
+            <div class="row mt-5" id="start">
+                <div class="col-10 offset-1 col-lg-8 offset-lg-2">
+
+                    {% include "sections/introduction.njk"%}
+
+                    {% if site.specialAnnouncement == true %}
+                        {% include "sections/special-announcements.njk"%}
+                    {% endif %}
+
+                    {% include "sections/next-singings.njk"%}
+
+                    {% include "sections/end-introduction.njk"%}
+
+                </div>
+            </div>
+
+            <div class="row mt-4" id="venue">
+
+                <div class="col-10 offset-1 col-lg-8 offset-lg-2">
+
+                    {% include "sections/venue.njk"%}
+
+                </div>
+            </div>
+
+            <div class="row mb-4" id="contact-us">
+                <div class="col-10 offset-1 col-lg-8 offset-lg-2">
+
+                    {% include "sections/contact.njk"%}
+
+                    {% if site.newsletter == true %}
+                        {% include "sections/newsletter.njk"%}
+                    {% endif %}
+                </div>
+            </div>
+
+           {% include "sections/more-information.njk" %}
+
+        </main>
+    </div>
+
+
+
+</body>
+
+</html>

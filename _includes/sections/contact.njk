@@ -1,0 +1,27 @@
+<h2 class="text-center mb-3">
+    <u>{{ sections_text.contact.sectionTitle }}</u>
+</h2>
+<div class="row mt-3">
+    <div class="col-3 col-sm-2">
+        <a href="mailto:{{ site.author.emailAddress }}">
+            <img src="assets/images/email.svg" alt="Email" class="contact-logo">
+        </a>
+    </div>
+    <div class="col-9 col-sm-10">
+        <p>{{ sections_text.contact.emailUsText }}
+            <a class="wordwrap" href="mailto:{{ site.author.emailAddress }}">{{ site.author.emailAddress }}</a>
+        </p>
+    </div>
+</div>
+<div class="row mt-3">
+    <div class="col-3 col-sm-2">
+        <a href="https://twitter.com/{{ site.author.twitterUsername }}">
+            <img src="assets/images/twitter.svg" alt="Twitter" class="contact-logo">
+        </a>
+    </div>
+    <div class="col-9 col-sm-10">
+        <p>{{ sections_text.contact.tweetUsText }}
+            <a href="https://twitter.com/{{ site.author.twitterUsername }}">@{{ site.author.twitterUsername }}</a>
+        </p>
+    </div>
+</div>
