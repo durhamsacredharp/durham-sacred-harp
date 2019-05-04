@@ -6,4 +6,4 @@
   Content-Security-Policy: default-src 'self'; img-src 'self' data: https://matomo.edjw.co.uk; script-src 'self' 'unsafe-inline' https://matomo.edjw.co.uk https://stackpath.bootstrapcdn.com https://code.jquery.com https://identity.netlify.com https://identity-js.netlify.com; style-src 'self' 'unsafe-inline' https://stackpath.bootstrapcdn.com;
 
 /admin
-  Content-Security-Policy: default-src 'self'; img-src 'self' data: https://matomo.edjw.co.uk; script-src 'self' 'unsafe-inline' https://matomo.edjw.co.uk https://stackpath.bootstrapcdn.com https://code.jquery.com https://identity.netlify.com https://identity-js.netlify.com  'unsafe-eval'; style-src 'self' 'unsafe-inline' https://stackpath.bootstrapcdn.com;
+  Content-Security-Policy: default-src 'self'; img-src 'self' data: https://matomo.edjw.co.uk; script-src 'self' 'unsafe-inline' https://matomo.edjw.co.uk https://stackpath.bootstrapcdn.com https://code.jquery.com https://identity.netlify.com https://identity-js.netlify.com https://unpkg.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://stackpath.bootstrapcdn.com;
