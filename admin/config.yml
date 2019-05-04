@@ -34,10 +34,10 @@ collections:
           - label: "Show Special Announcement?"
             name: "showSpecialAnnouncement"
             widget: "select"
-            default: "true"
+            default: "yes"
             options:
-              - { label: "Yes", value: "true" }
-              - { label: "No", value: "false" }
+              - { label: "Yes", value: "yes" }
+              - { label: "No", value: "no" }
           - {label: specialAnnouncement, name: specialAnnouncement, widget: markdown}
           - {label: text, name: text, widget: markdown}
 
