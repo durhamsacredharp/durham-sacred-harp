@@ -31,14 +31,15 @@ collections:
         name: "Next Singings"
         file: "_data/sections_text/next_singings.json"
         fields:
-          - {label: text, name: text, widget: markdown}
-          - {label: specialAnnouncement, name: specialAnnouncement, widget: markdown}
-          - label: "Show Special Announcment?"
-            name: "showSpecialAnnouncment"
+          - label: "Show Special Announcement?"
+            name: "showSpecialAnnouncement"
             widget: "select"
+            default: "Yes"
             options:
               - { label: "Yes", value: "true" }
               - { label: "No", value: "false" }
+          - {label: specialAnnouncement, name: specialAnnouncement, widget: markdown}
+          - {label: text, name: text, widget: markdown}
 
       - label: "End of Introduction"
         name: "end_introduction"
