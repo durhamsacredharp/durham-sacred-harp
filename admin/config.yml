@@ -34,7 +34,7 @@ collections:
           - label: "Show Special Announcement?"
             name: "showSpecialAnnouncement"
             widget: "select"
-            default: "Yes"
+            default: "true"
             options:
               - { label: "Yes", value: "true" }
               - { label: "No", value: "false" }
