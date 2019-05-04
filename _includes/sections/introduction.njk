@@ -1,8 +1,4 @@
 <h4 class="text-center pb-4">
-    <strong>Come along to sing Sacred Harp in Durham!</strong>
+    {{ sections_text.introduction.tagline | markdownify | safe }}
 </h4>
-<p><a href="#more-information">Sacred Harp</a> is a <strong>community folk hymn singing</strong> tradition from the United States. The Sacred Harp is also the name of the book we sing from.
-</p>
-<p>
-    <strong>Our singings are friendly and open to all.</strong> We aren't a choir because we don't rehearse or perform and no-one's in charge. Everyone just sings for their own enjoyment.<strong> You don't need to be able to read music yet or have a "good" voice to come along.</strong> Singers of all religions and none are welcome.
-</p>
+{{ sections_text.introduction.text | markdownify | safe }}

@@ -17,10 +17,41 @@ logo_url: /assets/images/dsh_new_share_image.png
 media_folder: "assets/images" # Media files will be stored in the repo under images/uploads
 
 collections:
-    # Text for sections of the page
   - label: "Sections Text"
     name: "sections_text"
     files:
+      - label: "Introduction"
+        name: "Introduction"
+        file: "_data/sections_text/introduction.json"
+        fields:
+          - {label: tagline, name: tagline, widget: markdown}
+          - {label: text, name: text, widget: markdown}
+
+      - label: "Next Singings"
+        name: "Next Singings"
+        file: "_data/sections_text/next_singings.json"
+        fields:
+          - {label: text, name: text, widget: markdown}
+
+      - label: "End Introduction"
+        name: "end_introduction"
+        file: "_data/sections_text/end_introduction.json"
+        fields:
+          - {label: Text, name: text, widget: markdown}
+
+      - label: "Venue"
+        name: "Venue"
+        file: "_data/sections_text/venue.json"
+        fields:
+          - {label: sectionTitle, name: sectionTitle, widget: string}
+          - {label: venueAddress, name: venueAddress, widget: markdown}
+          - {label: venueDescription, name: venueDescription, widget: markdown}
+          - {label: clickMapsInstruction, name: clickMapsInstruction, widget: string}
+          - {label: GoogleMapsLink, name: GoogleMapsLink, widget: string}
+          - {label: GoogleMapsImage, name: GoogleMapsImage, widget: image, allow_multiple: false}
+          - {label: GoogleMapsImageAltText, name: GoogleMapsImageAltText, widget: string}
+          - {label: GoogleMapsLegal, name: GoogleMapsLegal, widget: markdown}
+
       - label: "Contact Us"
         name: "Contact Us"
         file: "_data/sections_text/contact.json"
@@ -29,8 +60,9 @@ collections:
           - {label: emailUsText, name: emailUsText, widget: string}
           - {label: tweetUsText, name: tweetUsText, widget: string}
 
-      - label: "End Introduction"
-        name: "end_introduction"
-        file: "_data/sections_text/end_introduction.json"
+      - label: "More Information"
+        name: "More Information"
+        file: "_data/sections_text/more_information.json"
         fields:
-          - {label: Text, name: text, widget: markdown}
+          - {label: sectionTitle, name: sectionTitle, widget: string}
+          - {label: text, name: text, widget: markdown}

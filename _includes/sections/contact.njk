@@ -8,7 +8,7 @@
         </a>
     </div>
     <div class="col-9 col-sm-10">
-        <p>{{ sections_text.contact.emailUsText }}
+        <p>{{ sections_text.contact.emailUsText | safe }}
             <a class="wordwrap" href="mailto:{{ site.author.emailAddress }}">{{ site.author.emailAddress }}</a>
         </p>
     </div>
@@ -20,7 +20,7 @@
         </a>
     </div>
     <div class="col-9 col-sm-10">
-        <p>{{ sections_text.contact.tweetUsText }}
+        <p>{{ sections_text.contact.tweetUsText | safe}}
             <a href="https://twitter.com/{{ site.author.twitterUsername }}">@{{ site.author.twitterUsername }}</a>
         </p>
     </div>

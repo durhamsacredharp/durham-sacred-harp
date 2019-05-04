@@ -1,28 +1,8 @@
- <div class="row mb-4" id="more-information">
-                <div class="col-10 offset-1 col-lg-8 offset-lg-2">
-                    <h2 class="text-center mb-3">
-                        <u>More information about Sacred Harp</u>
-                    </h2>
-                    <p>
-                        <a href="https://en.wikipedia.org/wiki/Sacred_Harp">The Wikipedia page on Sacred Harp</a> is an
-                        excellent place to find out more about the history and conventions
-                        of Sacred Harp singing.</p>
-                    <p>
-                        <a href="http://www.ukshapenote.org.uk/">UK Shapenote</a> has information about other UK and
-                        Europe
-                        singings from the Sacred Harp and other shapenote
-                        books.
-                    </p>
-                    <p>
-                        <a href="https://www.youtube.com/results?search_query=sacred+harp">YouTube</a> has hundreds
-                        (thousands?) of recordings and videos from across the Sacred Harp community.</p>
-                    <p>
-                        <a href="https://www.youtube.com/watch?v=YHUfHNEZDPc">Awake My Soul</a> is a great documentary
-                        about Sacred Harp singing.</p>
-                    <p>
-                        <a href="https://web.archive.org/web/20170530194352/http://www.newcastleshapenote.co.uk/">Newcastle
-                            Shapenote</a> sings Sacred Harp and other shapenote music
-                        <span class="font-italic">every Tuesday from 7.30pm at the Bridge Hotel</span> and
-                        <span class="font-italic">every 2nd Sunday from 8pm in Gateshead</span>.</p>
-                </div>
-            </div>
+<div class="row mb-4" id="more-information">
+    <div class="col-10 offset-1 col-lg-8 offset-lg-2">
+        <h2 class="text-center mb-3">
+            <u>{{ sections_text.more_information.sectionTitle | markdownify | safe }}</u>
+        </h2>
+        {{ sections_text.more_information.text | markdownify | safe }}
+    </div>
+</div>
