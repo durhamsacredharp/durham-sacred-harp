@@ -24,7 +24,7 @@ collections:
         name: "Introduction"
         file: "_data/sections_text/introduction.json"
         fields:
-          - {label: tagline, name: tagline, widget: markdown}
+          - {label: tagline, name: tagline, widget: string}
           - {label: text, name: text, widget: markdown}
 
       - label: "Next Singings"
@@ -32,8 +32,15 @@ collections:
         file: "_data/sections_text/next_singings.json"
         fields:
           - {label: text, name: text, widget: markdown}
+          - {label: specialAnnouncement, name: specialAnnouncement, widget: markdown}
+          - label: "Show Special Announcment?"
+            name: "showSpecialAnnouncment"
+            widget: "select"
+            options:
+              - { label: "Yes", value: "true" }
+              - { label: "No", value: "false" }
 
-      - label: "End Introduction"
+      - label: "End of Introduction"
         name: "end_introduction"
         file: "_data/sections_text/end_introduction.json"
         fields:
