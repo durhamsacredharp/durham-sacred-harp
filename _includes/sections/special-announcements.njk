@@ -1,3 +1,5 @@
-<div class="notification px-3 px-md-5" id="notification">
-    {{ sections_text.next_singings.specialAnnouncement | markdownify | safe }}
-</div>
+{% if sections_text.next_singings.showSpecialAnnouncement == "yes" and sections_text.next_singings.specialAnnouncementEndDate > buildTime %}
+    <div class="notification px-3 px-md-5" id="notification">
+        {{ sections_text.next_singings.specialAnnouncement | markdownify | safe }}
+    </div>
+{% endif %}

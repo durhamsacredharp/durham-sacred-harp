@@ -1,16 +1,18 @@
-<div class="pt-3 pb-3 mt-4 mb-4 text-center border" id="get-updates">
-    <h5>Get updates about our singings</h5>
-    <form action="https://tinyletter.com/durhamsacredharp" method="post" target="popupwindow"
-        onsubmit="window.open('https://tinyletter.com/durhamsacredharp', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
-        class="form-inline">
-        <div class="form-group mx-auto">
-            <input type="email" class="form-control text-center mt-2 mb-2" placeholder="email@example.com" name="email"
-                id="tlemail" />
-            <input type="hidden" value="1" name="embed" />
+{% if site.newsletter == true %}
+    <div class="pt-3 pb-3 mt-4 mb-4 text-center border" id="get-updates">
+        <h5>Get updates about our singings</h5>
+        <form action="https://tinyletter.com/durhamsacredharp" method="post" target="popupwindow"
+            onsubmit="window.open('https://tinyletter.com/durhamsacredharp', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+            class="form-inline">
+            <div class="form-group mx-auto">
+                <input type="email" class="form-control text-center mt-2 mb-2" placeholder="email@example.com" name="email"
+                    id="tlemail" />
+                <input type="hidden" value="1" name="embed" />
 
-            <button class="btn ml-4 updates-subscribe-button" type="submit">Subscribe</button>
-        </div>
+                <button class="btn ml-4 updates-subscribe-button" type="submit">Subscribe</button>
+            </div>
 
-        <small class="form-text px-2 px-md-5">We use TinyLetter to send occasional email updates. You'll receive an email from them to confirm you want to subscribe. This is <a href="https://mailchimp.com/legal/privacy/">their privacy policy</a>.</small>
-    </form>
-</div>
+            <small class="form-text px-2 px-md-5">We use TinyLetter to send occasional email updates. You'll receive an email from them to confirm you want to subscribe. This is <a href="https://mailchimp.com/legal/privacy/">their privacy policy</a>.</small>
+        </form>
+    </div>
+{% endif %}

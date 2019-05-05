@@ -24,12 +24,7 @@
 
                     {% include "sections/introduction.njk"%}
 
-                    {% if sections_text.next_singings.showSpecialAnnouncement == "yes" and sections_text.next_singings.specialAnnouncementEndDate > buildTime %}
-
-                            {% include "sections/special-announcements.njk"%}
-
-                    {% endif %}
-
+                    {% include "sections/special-announcements.njk"%}
 
                     {% include "sections/next-singings.njk"%}
 
@@ -52,9 +47,8 @@
 
                     {% include "sections/contact.njk"%}
 
-                    {% if site.newsletter == true %}
-                        {% include "sections/newsletter.njk"%}
-                    {% endif %}
+                    {% include "sections/newsletter.njk"%}
+
                 </div>
             </div>
 
