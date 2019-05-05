@@ -24,9 +24,12 @@
 
                     {% include "sections/introduction.njk"%}
 
-                    {% if sections_text.next_singings.showSpecialAnnouncement == "yes" %}
-                        {% include "sections/special-announcements.njk"%}
+                    {% if sections_text.next_singings.showSpecialAnnouncement == "yes" and sections_text.next_singings.specialAnnouncementEndDate > buildTime %}
+
+                            {% include "sections/special-announcements.njk"%}
+
                     {% endif %}
+
 
                     {% include "sections/next-singings.njk"%}
 
@@ -60,8 +63,7 @@
         </main>
     </div>
 
-    {% include "components/netlifyIdentity.html" %}
-
+<script src="assets/js/netlify_identity.js"></script>
 
 </body>
 

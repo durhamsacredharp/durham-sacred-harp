@@ -39,6 +39,7 @@ collections:
               - { label: "Yes", value: "yes" }
               - { label: "No", value: "no" }
           - {label: specialAnnouncement, name: specialAnnouncement, widget: markdown}
+          - {label: specialAnnouncementEndDate, name: specialAnnouncementEndDate, widget: date, format: "x", description: "When is the last day you want the special announcement to show?"}
           - {label: text, name: text, widget: markdown}
 
       - label: "End of Introduction"

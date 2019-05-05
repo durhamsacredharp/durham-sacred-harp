@@ -5,8 +5,7 @@
   "scripts": {
     "start": "yarn run dev",
     "build": "ELEVENTY_ENV=production yarn eleventy",
-    "dev": "ELEVENTY_ENV=development yarn eleventy --serve",
-    "debug": "DEBUG=* yarn eleventy"
+    "dev": "ELEVENTY_ENV=development yarn eleventy --serve"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.8.2",
