@@ -38,8 +38,8 @@ collections:
             options:
               - { label: "Yes", value: "yes" }
               - { label: "No", value: "no" }
-          - {label: specialAnnouncement, name: specialAnnouncement, widget: markdown}
-          - {label: specialAnnouncementEndDate, name: specialAnnouncementEndDate, widget: date, format: "x", description: "When is the last day you want the special announcement to show?"}
+          - {label: Special Announcement End Date, name: specialAnnouncementEndDate, widget: date, format: "x", description: When is the last day you want the special announcement to show?}
+          - {label: Special Announcement Text, name: specialAnnouncement, widget: markdown}
           - {label: text, name: text, widget: markdown}
 
       - label: "End of Introduction"
@@ -52,26 +52,26 @@ collections:
         name: "Venue"
         file: "_data/sections_text/venue.json"
         fields:
-          - {label: sectionTitle, name: sectionTitle, widget: string}
-          - {label: venueAddress, name: venueAddress, widget: markdown}
-          - {label: venueDescription, name: venueDescription, widget: markdown}
-          - {label: clickMapsInstruction, name: clickMapsInstruction, widget: string}
-          - {label: GoogleMapsLink, name: GoogleMapsLink, widget: string}
-          - {label: GoogleMapsImage, name: GoogleMapsImage, widget: image, allow_multiple: false}
-          - {label: GoogleMapsImageAltText, name: GoogleMapsImageAltText, widget: string}
-          - {label: GoogleMapsLegal, name: GoogleMapsLegal, widget: markdown}
+          - {label: section Title, name: sectionTitle, widget: string}
+          - {label: venue Address, name: venueAddress, widget: markdown}
+          - {label: venue Description, name: venueDescription, widget: markdown}
+          - {label: click Maps Instruction, name: clickMapsInstruction, widget: string}
+          - {label: Google Maps Link, name: GoogleMapsLink, widget: string}
+          - {label: Google Maps Image, name: GoogleMapsImage, widget: image, allow_multiple: false}
+          - {label: Google Maps Image Alt Text, name: GoogleMapsImageAltText, widget: string}
+          - {label: Google Maps Legal, name: GoogleMapsLegal, widget: markdown}
 
       - label: "Contact Us"
         name: "Contact Us"
         file: "_data/sections_text/contact.json"
         fields:
-          - {label: sectionTitle, name: sectionTitle, widget: string}
-          - {label: emailUsText, name: emailUsText, widget: string}
-          - {label: tweetUsText, name: tweetUsText, widget: string}
+          - {label: section Title, name: sectionTitle, widget: string}
+          - {label: email Us Text, name: emailUsText, widget: string}
+          - {label: tweet Us Text, name: tweetUsText, widget: string}
 
       - label: "More Information"
         name: "More Information"
         file: "_data/sections_text/more_information.json"
         fields:
-          - {label: sectionTitle, name: sectionTitle, widget: string}
+          - {label: section Title, name: sectionTitle, widget: string}
           - {label: text, name: text, widget: markdown}
