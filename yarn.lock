@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@11ty/eleventy@^0.8.2":
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/@11ty/eleventy/-/eleventy-0.8.2.tgz#bc87576eb9b4773377e8367c4e66b82717a31f6c"
-  integrity sha512-CqSwSTdYxYXr/CzwX8tOOA4f+UUk5dSjkB43352pdFaJoJfJnxK0kQo54w2oCd1Tf5XyMzIZ2i+IT+Rhm1w5IA==
+"@11ty/eleventy@^0.8.3":
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy/-/eleventy-0.8.3.tgz#94c417f7b658e78ab5f9ce64b91ff32b4ae5de31"
+  integrity sha512-TehjvEuVQaocz3R/rYMJdujg8a2SL4Wt+ZUPKfXZS926Wd14JqLpWtR/dTNPOh3JzAovZDNrOpFmwN3/urX6gQ==
   dependencies:
     browser-sync "^2.26.3"
     chalk "^2.4.2"
