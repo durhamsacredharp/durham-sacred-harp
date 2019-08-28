@@ -8,7 +8,7 @@
     "dev": "ELEVENTY_ENV=development yarn eleventy --serve"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.8.3",
+    "@11ty/eleventy": "^0.9.0",
     "eslint": "^6.0.1"
   },
   "dependencies": {}
