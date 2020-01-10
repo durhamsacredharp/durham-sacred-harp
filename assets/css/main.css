@@ -71,3 +71,7 @@ a:hover {
 .nav-link::selection {
     background-color: none;
 }
+
+#tagline > strong > p {
+    margin-bottom: 0;
+}
