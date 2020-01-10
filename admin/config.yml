@@ -25,7 +25,7 @@ collections:
         file: "_data/sections_text/introduction.json"
         fields:
           - {label: tagline, name: tagline, widget: string}
-          - {label: second tagline, name: second_tagline, widget: string}
+          - {label: second_tagline, name: second_tagline, widget: string}
           - {label: text, name: text, widget: markdown}
 
       - label: "Next Singings"
