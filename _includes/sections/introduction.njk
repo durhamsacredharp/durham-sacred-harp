@@ -1,4 +1,7 @@
-<h4 class="text-center pb-4">
+<h4 class="text-center">
     <strong>{{ sections_text.introduction.tagline | markdownify | safe }}</strong>
 </h4>
+<h5 class="text-center">
+    {{ sections_text.introduction.second_tagline | markdownify | safe }}
+</h5>
 {{ sections_text.introduction.text | markdownify | safe }}
