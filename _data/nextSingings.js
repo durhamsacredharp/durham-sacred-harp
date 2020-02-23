@@ -6,8 +6,8 @@ module.exports = async function () {
 		.dayOfWeekCount();
 	const nextThree = later.schedule(sched).next(3);
 	const options = {
-		month: "long",
 		day: "numeric",
+		month: "long",
 	};
 	const firstNext = (nextThree[0].toLocaleDateString("en-GB", options));
 	const secondNext = (nextThree[1].toLocaleDateString("en-GB", options));
