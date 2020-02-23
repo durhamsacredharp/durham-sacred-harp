@@ -5,13 +5,13 @@ module.exports = async function () {
     const sched = later.parse.recur().on(7).dayOfWeek().on(2, 4)
         .dayOfWeekCount();
     const nextThree = later.schedule(sched).next(3);
-    const options = {
-        day: "numeric",
-        month: "long"
-    };
-    const firstNext = nextThree[0].toLocaleDateString("en-GB", options);
-    const secondNext = nextThree[1].toLocaleDateString("en-GB", options);
-    const thirdNext = nextThree[2].toLocaleDateString("en-GB", options);
+
+
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    const firstNext = `${nextThree[0].getDate()} ${months[nextThree[0].getMonth()]}`;
+    const secondNext = `${nextThree[1].getDate()} ${months[nextThree[1].getMonth()]}`;
+    const thirdNext = `${nextThree[2].getDate()} ${months[nextThree[2].getMonth()]}`;
 
     const nextSingings = [firstNext, secondNext, thirdNext];
 
