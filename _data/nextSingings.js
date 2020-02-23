@@ -9,9 +9,9 @@ module.exports = async function () {
 		day: "numeric",
 		month: "long",
 	};
-	const firstNext = (nextThree[0].toLocaleDateString("en-GB", options));
-	const secondNext = (nextThree[1].toLocaleDateString("en-GB", options));
-	const thirdNext = (nextThree[2].toLocaleDateString("en-GB", options));
+	const firstNext = nextThree[0].toLocaleDateString("en-GB", options);
+	const secondNext = nextThree[1].toLocaleDateString("en-GB", options);
+	const thirdNext = nextThree[2].toLocaleDateString("en-GB", options);
 
 	const nextSingings = [firstNext, secondNext, thirdNext];
 
