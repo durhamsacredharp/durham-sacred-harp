@@ -1,77 +1,77 @@
 body {
-    background-color: #ededed;
+  background-color: #ededed;
 }
 
 a {
-    color: #2859a3;
-    border-bottom: 2px solid #2859a3;
+  color: #2859a3;
+  border-bottom: 2px solid #2859a3;
 }
 
 a.wordwrap {
-    word-wrap: break-word;
+  word-wrap: break-word;
 }
 
 a:hover {
-    color: #2859a3;
-    text-decoration: none;
+  color: #2859a3;
+  text-decoration: none;
 }
 
 .main-logo {
-    max-height: 300px;
+  max-height: 300px;
 }
 
 .fill {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .highlight {
-    padding: 1rem 0;
-    background-color: rgba(255, 234, 0, 0.3);
+  padding: 1rem 0;
+  background-color: rgba(255, 234, 0, 0.3);
 }
 
 .notification {
-    margin-bottom: 1rem;
-    padding: 1rem 0;
-    background-color: rgba(255, 104, 104, 0.5)
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  background-color: rgba(255, 104, 104, 0.5);
 }
 
 #upcoming-singings p,
 #notification p {
-    margin-bottom: 0
+  margin-bottom: 0;
 }
 
 .contact-logo {
-    max-width: 50px;
+  max-width: 50px;
 }
 
 .updates-subscribe-button {
-    background-color: #2859a3;
-    color: white;
+  background-color: #2859a3;
+  color: white;
 }
 
 .navbar {
-    background-color: #2859a3;
-    border-radius: 2px;
+  background-color: #2859a3;
+  border-radius: 2px;
 }
 
 .navbar-toggler {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .nav-link,
 .nav-link:hover {
-    color: #ffffff;
-    border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 
 .nav-link::-moz-selection {
-    background-color: none;
+  background-color: none;
 }
 
 .nav-link::selection {
-    background-color: none;
+  background-color: none;
 }
 
 #tagline > strong > p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }

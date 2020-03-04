@@ -17,7 +17,7 @@ module.exports = {
         "no-console": "off",
         "indent": [
             "error",
-            "tab"
+            "spaces"
         ],
         "quotes": [
             "error",

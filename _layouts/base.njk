@@ -1,64 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    {% include "components/metadata.njk" %}
-    {% include "components/head_styles_scripts.njk" %}
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        {% include "components/metadata.njk" %}
+        {% include "components/head_styles_scripts.njk" %}
+    </head>
 
-<body>
+    <body>
 
-    <div class="container mb-5">
+        <div class="container mb-5">
 
-        {% include "sections/top-logo.njk" %}
+            {% include "sections/top-logo.njk" %}
 
-        {% include "components/nav.njk" %}
+            {# {% include "components/nav.njk" %} #}
 
-        <main id="main">
+            <main id="main">
 
-            <div class="row mt-5" id="start">
-                <div class="col-10 offset-1 col-lg-8 offset-lg-2">
+                <section class="row mt-5" id="start">
+                    <div class="col-10 offset-1 col-lg-8 offset-lg-2">
 
-                    {% include "sections/introduction.njk"%}
+                        {% include "sections/introduction.njk"%}
 
-                    {% include "sections/special-announcements.njk"%}
+                        {% include "sections/special-announcements.njk"%}
 
-                    {% include "sections/next-singings.njk"%}
+                        {% include "sections/next-singings.njk"%}
 
-                    {% include "sections/end-introduction.njk"%}
+                        {% include "sections/end-introduction.njk"%}
 
-                </div>
-            </div>
+                    </div>
+                </section>
 
-            <div class="row mt-4" id="venue">
+                <section class="row mt-4" id="venue">
 
-                <div class="col-10 offset-1 col-lg-8 offset-lg-2">
+                    <div class="col-10 offset-1 col-lg-8 offset-lg-2">
 
-                    {% include "sections/venue.njk"%}
+                        {% include "sections/venue.njk"%}
 
-                </div>
-            </div>
+                    </div>
+                </section>
 
-            <div class="row mb-4" id="contact-us">
-                <div class="col-10 offset-1 col-lg-8 offset-lg-2">
+                <section class="row mb-4" id="contact-us">
+                    <div class="col-10 offset-1 col-lg-8 offset-lg-2">
 
-                    {% include "sections/contact.njk"%}
+                        {% include "sections/contact.njk"%}
 
-                    {% include "sections/newsletter.njk"%}
+                        {% include "sections/newsletter.njk"%}
 
-                </div>
-            </div>
+                    </div>
+                </section>
 
-           {% include "sections/more-information.njk" %}
+                <section class="row mb-4" id="more-information">
+                    <div class="col-10 offset-1 col-lg-8 offset-lg-2">
 
-        </main>
-    </div>
+                        {% include "sections/more-information.njk" %}
+                    </div>
+                </section>
 
-<script src="assets/js/netlify_identity.js"></script>
+            </main>
+        </div>
 
-</body>
+        <script src="assets/js/netlify_identity.js"></script>
+
+    </body>
 
 </html>
