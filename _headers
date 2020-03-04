@@ -3,7 +3,7 @@
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
   Referrer-Policy: same-origin
-  Content-Security-Policy: default-src 'self'; img-src 'self' data: https://matomo.edjw.co.uk https://www.facebook.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://matomo.edjw.co.uk https://stackpath.bootstrapcdn.com https://code.jquery.com https://identity.netlify.com https://identity-js.netlify.com https://connect.facebook.net; style-src 'self' 'unsafe-inline' https://stackpath.bootstrapcdn.com;
+  Content-Security-Policy: default-src 'self'; img-src 'self' *.cloudfront.net data: https://matomo.edjw.co.uk https://www.facebook.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.cloudfront.net https://matomo.edjw.co.uk https://stackpath.bootstrapcdn.com https://code.jquery.com https://identity.netlify.com https://identity-js.netlify.com https://connect.facebook.net; style-src 'self' 'unsafe-inline' *.cloudfront.net https://stackpath.bootstrapcdn.com;
 
 /admin
-  Content-Security-Policy: default-src 'self'; img-src 'self' data: https://matomo.edjw.co.uk; script-src 'self' 'unsafe-inline' https://matomo.edjw.co.uk https://stackpath.bootstrapcdn.com https://code.jquery.com https://identity.netlify.com https://identity-js.netlify.com https://unpkg.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://stackpath.bootstrapcdn.com;
+  Content-Security-Policy: default-src 'self'; img-src 'self' data: https://matomo.edjw.co.uk *.cloudfront.net; script-src 'self' 'unsafe-inline' https://matomo.edjw.co.uk https://stackpath.bootstrapcdn.com https://code.jquery.com https://identity.netlify.com https://identity-js.netlify.com https://unpkg.com 'unsafe-eval' *.cloudfront.net; style-src 'self' 'unsafe-inline' https://stackpath.bootstrapcdn.com *.cloudfront.net;
