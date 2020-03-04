@@ -1,8 +1,4 @@
-<div class="row mb-4" id="more-information">
-    <div class="col-10 offset-1 col-lg-8 offset-lg-2">
-        <h2 class="text-center mb-3">
-            <u>{{ sections_text.more_information.sectionTitle | markdownify | safe }}</u>
-        </h2>
-        {{ sections_text.more_information.text | markdownify | safe }}
-    </div>
-</div>
+<h2 class="text-center mb-3">
+    <u>{{ sections_text.more_information.sectionTitle | markdownify | safe }}</u>
+</h2>
+{{ sections_text.more_information.text | markdownify | safe }}
